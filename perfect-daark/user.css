@@ -1,0 +1,483 @@
+/**
+ * Perfect Daark theme for Shaarli
+ *
+ * VirtualTam <virtualtam@flibidi.org>
+ */
+
+/* http://www.ffonts.net/Eurostile.font.download */
+@font-face {
+    font-family: Eurostile;
+    src: url(eurostile.ttf);
+}
+/* http://www.dafont.com/perfect-dark.font */
+@font-face {
+    font-family: PerfectDark;
+    src: url(pdark.ttf);
+}
+
+/* Smooth blink effect on hovered links */
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+a:hover, a:focus {
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+ul.ui-autocomplete {
+    width: 70%;
+    background-color: #0e1937;
+    border: 1px solid #58d1e4;
+    border-top: none;
+    border-radius: 2px;
+}
+
+li a.ui-corner-all:hover, li a.ui-corner-all:focus, li a.ui-state-hover {
+    animation-name: none;
+    color: #f0f0f0;
+    background-color: #0e1937;
+}
+
+html {
+    color: #58d1e4;
+    background: #000;
+}
+
+body {
+    background-color: #000;
+    font-family: Eurostile,Helvetica,sans-serif;
+    font-size: 12pt;
+}
+
+#pageheader {
+    background: linear-gradient(#3397af, #1f365f, #276395);
+    padding: 0;
+    min-height: 90px;
+}
+
+#pageheader a {
+    font-family: PerfectDark,"DejaVu Sans",sans-serif;
+    font-variant: small-caps;
+    font-size: 14pt;
+    color: #f0f0f0 !important;
+    text-shadow: 0 2px 3px #000;
+    background: none;
+    box-shadow: none;
+}
+
+#pageheader a b {
+    color: #f7ba12;
+    font-weight: normal;
+}
+
+#pageheader #shaarli_title a {
+    font-family: Eurostile,Helvetica,sans-serif;
+    font-size: 12pt;
+    font-variant: normal;
+}
+
+#pageheader #linkcount {
+    margin-right: 10px;
+    color: #ddd;
+}
+
+/* forms */
+#install {
+    margin: 0;
+    background-color: #0e1937;
+    text-align: center;
+}
+
+#install h1 {
+    padding: 5px 0;
+    font-family: PerfectDark,"DejaVu Sans",sans-serif;
+    font-variant: small-caps;
+    font-size: 28pt;
+    font-weight: normal;
+    font-style: normal;
+    color: #f0f0f0;
+    background: linear-gradient(#3397af, #1f365f, #276395);
+    text-shadow: 0 2px 3px #000;
+}
+
+#install form {
+    display: inline-block;
+    border: none;
+}
+
+#install form td {
+    color: #f0f0f0;
+    text-align: right;
+}
+
+#install form td input {
+    text-align: center;
+}
+
+#headerform {
+    margin-left: 125px;
+    padding: 0;
+}
+
+.addform, .linksperpage, .searchform, .tagfilter {
+    background: transparent;
+    box-shadow: none;
+}
+
+#changetag {
+    color: #f0f0f0;
+}
+
+#editlinkform, #configform, #toolsdiv, #uploaddiv {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    margin: 35px 0 0 0;
+    font-size: 12pt;
+    background-color: #0e1937;
+}
+
+#editlinkform textarea, #editlinkform .lf_input {
+    width: 70%;
+    margin-bottom: 7px;
+}
+
+#toolsdiv a {
+    font-family: Eurostile,Helvetica,sans-serif;
+    font-variant: normal;
+    font-size: 13pt;
+}
+
+#uploadform input {
+    color: #f7ba12;
+    border: none;
+    box-shadow: none;
+}
+
+form i, #configform td {
+    font-size: 12pt;
+    font-style: normal;
+}
+
+input, textarea {
+    font-size: 12pt;
+    color: #f0f0f0;
+    background: transparent;
+    border: 1px solid #58d1e4;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #000;
+}
+
+.addform input, .linksperpage input, .searchform input, .tagfilter input {
+    margin: 0;
+    padding: 2px 5px;
+    height: 1.2em;
+    font-size: 12pt;
+    color: #f0f0f0;
+    background: transparent;
+    border: 1px solid #58d1e4;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px #333;
+}
+
+.addform input.bigbutton, .searchform input.bigbutton, .tagfilter input.bigbutton,
+#changepasswordform input.bigbutton, #changetag input.bigbutton,
+#configform input.bigbutton, #installform input.bigbutton,
+#editlinkform input.bigbutton, #uploadform input.bigbutton {
+    padding: 2px 5px;
+    height: auto;
+    font-size: 12pt;
+    color: #58d1e4;
+    background: transparent;
+    border: 1px solid #58d1e4;
+    border-radius: 2px;
+    border-style: solid;
+    box-shadow: 0 1px 1px #333;
+}
+
+.addform input.bigbutton:hover, .searchform input.bigbutton:hover,
+.tagfilter input.bigbutton:hover,
+#changepasswordform input.bigbutton:hover, #changetag input.bigbutton:hover,
+#configform input.bigbutton:hover, #installform input.bigbutton:hover,
+#editlinkform input.bigbutton:hover, #uploadform input.bigbutton:hover {
+    color: #f0f0f0;
+}
+
+.addform input.linkurl {
+    font-size: 12pt;
+    margin-left: 0;
+}
+/* end forms */
+
+
+/* paging */
+.paging {
+    color: #58d1e4;
+    background-color: #000;
+    margin-top: 5px;
+    padding-top: 0;
+}
+
+.paging a, .paging a:hover {
+    color: #f0f0f0;
+}
+
+#paging_current {
+    color: #58d1e4;
+}
+
+#paging_linksperpage {
+    padding-right: 0;
+}
+
+.linksperpage input {
+    margin-bottom: 5px;
+    text-align: center;
+}
+/* end paging */
+
+/* linklist */
+#linklist li {
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    background: #0e1937;
+    background-color: #0e1937;
+}
+
+#linklist li.private {
+    background: none;
+    background-color: #000924;
+    zbackground-color: #111;
+    padding: 0;
+}
+
+#linklist li.publicLinkHightLight {
+    background-color: #0d2040;
+}
+
+.linkcontainer br {
+    display: none;
+}
+
+.linkeditbuttons {
+    float: left;
+    padding: 5px 5px 1px 5px;
+    position: static;
+    border: 0 none;
+    left: 0;
+    background: linear-gradient(#666, #a9a9a9, #666);
+    box-shadow: none;
+    vertical-align: middle;
+}
+
+.linkeditbuttons br {
+    display: none;
+}
+
+.thumbnail img {
+    padding: 30px 0 0 10px;
+}
+
+.linktitle {
+    display: block;
+    width: 100%;
+    padding: 0.1em;
+    background: linear-gradient(#3397af, #1f365f, #276395);
+    line-height: 1.2em;
+    font-size: 14pt;
+}
+
+.private .linktitle {
+    background: linear-gradient(#a91a00, #420f01, #a91a00);
+}
+
+.linktitle a, .private .linktitle a {
+    color: #f0f0f0;
+    font-weight: normal;
+    padding-left: 0.2em;
+    text-shadow: 0 1px 1px #000;
+}
+
+.linktitle a:hover, .linkdescription a:hover {
+    color: #f0f0f0;
+}
+
+.linkdescription {
+    color: #78d1e4;
+    padding: 0 5px;
+    font-size: 13pt;
+    text-align: justify;
+}
+
+.linkdescription br {
+    display: inline;
+}
+
+.linkdescription a {
+    color: #ddd;
+}
+
+.linkdate {
+    margin-left: 5px;
+}
+
+.linkdate a, .linkurl {
+    font-size: 10pt;
+    color: #747474;
+}
+
+.linkdate a:hover, .linkurl:hover {
+    color: #aaa;
+}
+
+/* hack: do not show QRcodes */
+#linklist li {
+    color: transparent;
+}
+
+.linkqrcode {
+    display: none;
+}
+
+.linkurl {
+    margin-left: -8px;
+}
+/* end hack */
+
+/* Link tags */
+.linktaglist {
+    margin-left: 5px;
+}
+
+.linktag {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.linktag a {
+    padding: 2px 5px;;
+    font-size: 12pt;
+    border: 1px solid #276395;
+    border-radius: 3px;
+    color: #58d1e4;
+}
+
+.linktag a:hover {
+    color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    animation-name: none;
+}
+/* end linklist */
+
+/* tagcloud */
+center {
+    background-color: #0e1937;
+}
+
+#cloudtag a {
+    font-weight: normal;
+    color: #f0f0f0;
+    text-shadow: 0 1px 2px #000;
+}
+/* /tagcloud */
+
+/* daily */
+div.daily {
+    font-family: Eurostile,Helvetica,sans-serif;
+    color: #58d1e4;
+    background: none;
+    background-color: #0e1937;
+}
+
+div.dailyTitle img, div.dailyEntryPermalink a img, div#closing img {
+    display: none;
+}
+
+div.dailyTitle {
+    font-family: PerfectDark,"DejaVu Sans",sans-serif;
+    font-variant: small-caps;
+    font-weight: normal;
+    color: #f0f0f0;
+    text-shadow: 0 3px 4px #000;
+}
+
+div.dailyDate span {
+    color: #f0f0f0;
+}
+
+div.dailyAbout {
+    top: 10px;
+    font-size: 11pt;
+    border: none;
+}
+
+div.dailyAbout a {
+    color: #f0f0f0;
+}
+
+div.daily .clear {
+    margin-top: 10px;
+}
+
+div.dailyEntryTags {
+    font-size: 10pt;
+    color: #999;
+}
+
+div.dailyEntryTitle a {
+    color: #f0f0f0;
+}
+
+div.dailyEntryDescription a {
+    color: #ccc;
+}
+
+div.dailyEntryThumbnail {
+    background: none;
+}
+
+div.dailyEntryThumbnail img {
+    border: 1px solid #999;
+    box-shadow: 0 1px 1px #000;
+}
+
+div.dailyEntryThumbnail img:hover {
+    border: 1px solid #f0f0f0;
+}
+/* /daily */
+
+/* It's a me... Shaarli! */
+#footer {
+    line-height: 2em;
+    font-size: 10pt;
+    text-align: center;
+    border-top: none;
+    color: #666;
+    clear: both;
+}
+
+#footer a {
+    font-weight: normal;
+    color: #ec1a23;
+}
+
+#footer a:hover {
+    color: #f7ba12;
+    border-color: #f7ba12;
+}
+
+#footer b a {
+    margin: 0;
+    padding: 3px 8px;
+    border: 1px solid #ec1a23;
+    border-radius: 20px;
+}
