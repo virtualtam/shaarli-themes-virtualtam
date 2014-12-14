@@ -1,0 +1,216 @@
+/**
+ * Anthracite theme for Shaarli
+ *
+ * VirtualTam <virtualtam@flibidi.org>
+ */
+
+html {
+    color: #fff;
+    background: #000;
+}
+
+body {
+    font-family: Geneva,sans-serif;
+    font-size: 11pt;
+    background-color: #000;
+}
+
+ul.ui-autocomplete {
+    background-color: #333;
+    width: 70%;
+    border: 1px solid #747474;
+}
+
+li a.ui-corner-all:hover {
+    color: #f7ba12;
+    background-color: #333;
+    cursor: pointer;
+}
+
+/* form appearance */
+form.addform, form.searchform, form.tagfilter, form.linksperpage,
+#changepasswordform input, #changetag input, #configform input,
+#installform input, #editlinkform input, #editlinkform textarea,
+#uploadform input {
+    color: #ccc;
+    border: 1px solid #747474;
+    background: linear-gradient(#222, #333);
+}
+
+.addform input, .linksperpage input, .searchform input, .tagfilter input {
+    color: #ccc;
+}
+
+.addform input.bigbutton, .searchform input.bigbutton, .tagfilter input.bigbutton,
+#changepasswordform input.bigbutton, #changetag input.bigbutton,
+#configform input.bigbutton, #installform input.bigbutton,
+#editlinkform input.bigbutton, #uploadform input.bigbutton {
+    background: linear-gradient(#111, #333, #222);
+}
+
+.addform input.bigbutton:hover, .searchform input.bigbutton:hover,
+.tagfilter input.bigbutton:hover,
+#changepasswordform input.bigbutton:hover, #changetag input.bigbutton:hover,
+#configform input.bigbutton:hover, #installform input.bigbutton:hover,
+#editlinkform input.bigbutton:hover, #uploadform input.bigbutton:hover {
+    color: #f0f0f0;
+    background: linear-gradient(#222, #444, #333);
+}
+
+.addform input.linkurl {
+    font-size: 10pt;
+    margin-left: 0;
+}
+/* end form */
+
+
+#pageheader a:hover, #footer a:hover,
+.paging a:hover,
+.linktitle a:hover, .linkdescription a:hover {
+    color: #f7ba12;
+}
+
+.linkeditbuttons {
+    top: 7px;
+    background: linear-gradient(#444, #fff);
+}
+
+.paging {
+    background-color: #333;
+    border-top: 1px solid #747474;
+}
+
+#linklist li {
+    min-height: 50px;
+    border-top: 1px solid #747474;
+    background: #111111;
+    background-color: #111111;
+    padding: 4px 10px 4px 26px;
+    overflow: hidden;
+    position: relative;
+}
+
+#linklist li.publicLinkHightLight {
+    background-color: #1d1d1d;
+}
+
+#linklist li.private {
+    padding-left: 26px;
+    background: none;
+    background-color: #281212;
+}
+
+.private .linktitle a {
+    color: #c0c0c0;
+}
+
+.private .linktitle a:hover {
+    color: #f7ba12;
+}
+
+.thumbnail {
+    margin-top: 2px;
+}
+
+.linktitle {
+    font-weight: normal;
+}
+
+.linktitle a {
+    color: #69af2f;
+    text-shadow: 0 2px 2px #000;
+}
+
+.linkdescription {
+    color: #ccc;
+    margin-top: 2px;
+}
+
+.linkdescription a {
+    color: #77abd6;
+}
+
+.linkdate a, .linkurl {
+    color: #747474;
+}
+
+.linkdate a:hover, .linkurl:hover {
+    color: #f0f0f0;
+}
+
+/* hack: do not show QRcodes */
+#linklist li {
+    color: transparent;
+}
+
+.linkqrcode {
+    display: none;
+}
+
+.linkurl {
+    margin-left: -10px;
+}
+/* endhack */
+
+.linktag {
+    border: 1px solid #666;
+    background-color: #333;
+    box-shadow: 0 2px 2px #000;
+}
+
+.linktag:hover {
+    border-color: #f7ba12;
+}
+
+.linktag a {
+    color: #fff;
+    text-shadow: 0 1px 1px #000;
+}
+
+#footer, .picwall_container, div.daily, #cloudtag {
+    border-top: 1px solid #747474;
+}
+
+#footer {
+    background-color: #333;
+}
+
+#footer a {
+    color: #69af2f;
+}
+
+#cloudtag {
+    background-color: #111;
+}
+
+#cloudtag a {
+    color: #ccc;
+    text-shadow: 0 2px 2px #000;
+}
+
+#cloudtag a:hover {
+    color: #f7ba12;
+}
+
+div.daily {
+    color: #000;
+    border-bottom: none;
+}
+
+div.dailyEntryThumbnail {
+    background: none;
+}
+
+#install {
+    margin: 0;
+    padding: 0 20px;
+    background: linear-gradient(#111, #333)
+}
+
+#install form {
+    border: none;
+}
+
+#installform td {
+    color: #f0f0f0;
+}
