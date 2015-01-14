@@ -184,6 +184,7 @@ form.addform, form.searchform, form.tagfilter, form.linksperpage,
 }
 
 #cloudtag a {
+    font-weight: bold;
     color: #ccc;
     text-shadow: 0 2px 2px #000;
 }
