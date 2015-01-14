@@ -1,5 +1,5 @@
-miingus-themes
-==============
+shaarli-themes-virtualtam
+=========================
 
 VirtualTam's [Shaarli](https://github.com/sebsauvage/Shaarli) themes.
 
