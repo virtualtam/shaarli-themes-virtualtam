@@ -61,8 +61,36 @@ form.addform, form.searchform, form.tagfilter, form.linksperpage,
     font-size: 10pt;
     margin-left: 0;
 }
+
 /* end form */
 
+.awesomplete ul {
+    border: 1px solid #747474 !important;
+}
+
+.awesomplete li {
+    color: #888;
+    background-color: #333;
+}
+
+.awesomplete li:hover {
+    color: #bbb !important;
+    background-color: #555 !important;
+}
+
+.awesomplete li mark {
+    color: #f0f0f0 !important;
+    background-color: transparent !important;
+}
+
+#toolsdiv a {
+    line-height: 1em;
+    float: left;
+}
+
+#pageheader a {
+    margin: 0;
+}
 
 #pageheader a:hover, #footer a:hover,
 .paging a:hover,
@@ -110,6 +138,11 @@ form.addform, form.searchform, form.tagfilter, form.linksperpage,
 
 .thumbnail {
     margin-top: 2px;
+}
+
+.thumbnail img {
+    margin-top: 2px;
+    box-shadow: none;
 }
 
 .linktitle {
@@ -173,6 +206,8 @@ form.addform, form.searchform, form.tagfilter, form.linksperpage,
 
 #footer {
     background-color: #333;
+    margin: 0 auto;
+    max-width: none;
 }
 
 #footer a {
